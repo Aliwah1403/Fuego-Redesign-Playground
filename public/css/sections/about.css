@@ -1,0 +1,169 @@
+.about-title {
+  position: relative;
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-family: var(--heading);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.about-title span {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.about-title::after {
+  content: "";
+  background: var(--secondary-color);
+  width: 200px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 11%;
+  transform: translateX(-10%);
+}
+
+#about p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.col-left {
+  width: 250px;
+  height: 360px;
+}
+
+.col-right {
+  width: 100%;
+}
+
+.about-video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.about-video::after {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 19px;
+  height: 98%;
+  width: 98%;
+  border: 5px solid var(--secondary-color);
+  z-index: -1;
+}
+
+.about-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-vid {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.about-vid.fade-out {
+  opacity: 0;
+}
+
+.about-btn {
+  color: #fff;
+  background: var(--secondary-color);
+  margin: 5px 0 80px 0;
+  padding: 10px 20px;
+  font-family: var(--heading);
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  cursor: pointer;
+  background: var(--hover-secondary);
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    flex-direction: row;
+  }
+
+  .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+  }
+
+  .about-video::after {
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+  }
+
+  .col-right {
+    text-align: left;
+    padding: 0 30px;
+  }
+
+  .about-title {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #about p {
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .about-title {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  .about-title::after {
+    width: 150px;
+    left: 35%;
+    bottom: -1px;
+  }
+
+  .about-video {
+    left: 6%;
+  }
+
+  .about {
+    margin-top: -80px;
+  }
+}

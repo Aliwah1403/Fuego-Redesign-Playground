@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex_align_justify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_align {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+.terms_service {
+  width: 900px;
+  max-width: 100%;
+}
+
+.terms_service .tc_item {
+  padding: 20px 40px;
+}
+
+.terms_service .tc_head {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.terms_service .tc_head .logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.terms_service .tc_head img {
+  width: 100%;
+  height: 100%;
+}
+
+.terms_service .tc_head .terms-heading {
+  text-align: center;
+}
+
+.terms_service .tc_head h2 {
+  text-transform: uppercase;
+}
+
+.terms_service .tc_head p {
+  opacity: 0.7;
+}
+
+.terms_service .tc_body {
+  height: calc(100% - 170px);
+  overflow: auto;
+  padding-right: 20px;
+}
+
+.terms_service .tc_body ol li {
+  padding-bottom: 30px;
+}
+
+.terms_service .tc_body ol li h3 {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-family: var(--heading);
+}
+
+.terms_service .tc_body ol li p {
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+.terms_service .tc_body ol li a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.terms_service .tc_foot {
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  height: 80px;
+}
+
+.terms_service .tc_foot button {
+  width: 100%;
+  border: 1px solid var(--bg-clr);
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.terms_service .tc_foot button.decline_btn {
+  margin-right: 20px;
+  background: var(--white);
+  color: var(--bg-clr);
+}
+
+.terms_service .tc_foot button.accept_btn {
+  background: var(--bg-clr);
+  color: var(--white);
+}
+
+.terms_service .tc_foot button.decline_btn:hover {
+  background: var(--bg-clr);
+  color: var(--white);
+}
+
+.terms_service .tc_foot button.accept_btn:hover {
+  background: var(--bg-hvr);
+  color: var(--white);
+}

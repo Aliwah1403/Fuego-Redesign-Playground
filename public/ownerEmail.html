@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background: #040303;
+            color: #f5f5f5; */
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: block;
+            margin: 30px auto 60px;
+            min-height: auto;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 30px;
+            width: 50%;
+            display: block;
+            line-height: 50px;
+            text-transform: capitalize;
+        }
+
+        .heading span {
+            font-weight: 300;
+        }
+
+        .customer-order,
+        .order-details {
+            margin-top: 5%;
+            min-width: 700px;
+            padding: 10px 20px;
+        }
+
+        .customer-order h2 {
+            font-weight: 500;
+        }
+
+        /* Order details */
+        .product-list,
+        .details {
+            width: 100%;
+            padding-right: 30px;
+        }
+
+        .details h4 {
+            margin: 15px 0;
+            color: #f26700;
+        }
+
+        .details h4 span {
+            color: #040303;
+        }
+
+        .orders {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 35px;
+        }
+
+
+        .sm-product-img {
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .sm-product-name {
+            font-size: 17px;
+            font-weight: 300;
+            font-family: var(--heading);
+            text-transform: capitalize;
+            color: #040303;
+            margin: 15px 0 10px;
+        }
+
+        .sm-size {
+            color: #fff;
+            opacity: 0.6;
+            font-family: var(--heading);
+        }
+
+        .sm-size span {
+            color: var(--secondary-color);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+
+        .item-count {
+            height: 30px;
+        }
+
+
+        .item-count {
+            text-align: center;
+            color: #040303;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">
+            <span>You have received a new order from</span>, ${name}
+        </h1>
+
+        <div class="order-details">
+            <h2 style="margin-bottom: 20px;">Order Details</h2>
+            <div class="details">
+                <h4>Customer Number: <span style="font-weight: lighter;">0708019875</span></h4>
+                <h4>Customer Email: <span style="font-weight: lighter;">aliwah@gmail.com</span></h4>
+                <h4>Order Date: <span style="font-weight: lighter;">15-12-23</span></h4>
+                <h4>Order Time: <span style="font-weight: lighter;">11:58:23</span></h4>
+                <h4>Customer Address: <span style="font-weight: lighter;">
+                        <div class="address-details">
+                            Katani, Syokimau,<br>
+                            Katani Road,<br>
+                            Nairobi,<br>
+                            00100
+                        </div>
+                    </span>
+                </h4>
+                <h4>Delivery Message: <span style="font-weight: lighter;">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Accusantium doloremque ducimus ut at perspiciatis praesentium repellat
+                        officiis deleniti iusto harum a eveniet, sit suscipit! Voluptate laborum tenetur animi quae
+                        voluptatem.</span>
+                </h4>
+            </div>
+        </div>
+
+        <div class="customer-order">
+            <h2>Item(s) Ordered</h2>
+            <div class="product-list">
+
+                <div class="orders">
+                    <table width="90%" cellpadding="0" cellspacing="0" border="0"
+                        style="width: 90%; height: 85px; margin-bottom: 35px;">
+                        <tr>
+                            <td style="vertical-align: middle;">
+                                <img src="images/products/totes/Big-Wording-Relvetti-pattern-brown-Tote-Pink.png" alt=""
+                                    class="sm-product-img" />
+                            </td>
+                            <td style="vertical-align: middle;">
+                                <div class="sm-text">
+                                    <p class="sm-product-name">Brown Relvetti Tote Bag</p>
+                                    <p class="sm-size">Size: <span style="color: #f26700;">NULL</span></p>
+                                </div>
+                            </td>
+                            <td style="vertical-align: middle;">
+                                <div class="quantity">
+                                    <p class="item-count">1x</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                    <table width="90%" cellpadding="0" cellspacing="0" border="0"
+                        style="width: 90%; height: 85px; margin-bottom: 35px;">
+                        <tr>
+                            <td style="vertical-align: middle;">
+                                <img src="images/products/hoodies/LITC-Clouded-Blue-Hoodie.png" alt=""
+                                    class="sm-product-img" />
+                            </td>
+                            <td style="vertical-align: middle;">
+                                <div class="sm-text">
+                                    <p class="sm-product-name">LITC Clouded Blue Hoodie</p>
+                                    <p class="sm-size">Size: <span style="color: #f26700;">XL</span></p>
+                                </div>
+                            </td>
+                            <td style="vertical-align: middle;">
+                                <div class="quantity">
+                                    <p class="item-count">1x</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

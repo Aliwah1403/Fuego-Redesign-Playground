@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuego Admin | Add Product</title>
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/sections/signup.css" />
+
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
+</head>
+
+<body id="add-product">
+  <img src="../images/loader.gif" class="loader" alt="loader-gif" />
+
+  <div class="toast-alert">
+    <div class="toast-content">
+      <i class="fi fi-ss-triangle-warning exclamation"></i>
+
+      <div class="message">
+        <span class="text text-1">Error</span>
+        <span class="text text-2">Error Message Shown</span>
+      </div>
+    </div>
+    <i class="fi fi-br-cross-small close"></i>
+
+    <div class="progress"></div>
+  </div>
+
+   <h3 class="web-logo" id="seller-logo">Fuego<span>X</span>Relvetti</h3>
+
+  <!-- Add Products Form -->
+  <div class="add-product-form">
+    <input type="text" placeholder="product name" id="product-name" />
+    <!-- <input
+        type="text"
+        placeholder="short description about the product"
+        id="short-des"
+      /> -->
+    <textarea placeholder="detailed description of product" id="des"></textarea>
+
+    <!-- products being added -->
+    <div class="product-info">
+      <div class="product-image">
+        <p class="text">product image</p>
+      </div>
+      <div class="upload-image-sec">
+        <!-- inputs for image upload -->
+        <p class="text">
+          <img src="../images/camera.png" alt="camera-icon" />Upload images
+        </p>
+        <div class="upload-catalouge">
+          <input type="file" hidden id="first-file-upload-btn" class="fileupload" />
+          <label for="first-file-upload-btn" class="upload-image"></label>
+
+          <input type="file" hidden id="second-file-upload-btn" class="fileupload" />
+          <label for="second-file-upload-btn" class="upload-image"></label>
+
+          <input type="file" hidden id="third-file-upload-btn" class="fileupload" />
+          <label for="third-file-upload-btn" class="upload-image"></label>
+
+          <input type="file" hidden id="fourth-file-upload-btn" class="fileupload" />
+          <label for="fourth-file-upload-btn" class="upload-image"></label>
+        </div>
+      </div>
+      <div class="select-sizes">
+        <p class="text">sizes available</p>
+        <div class="sizes">
+          <input type="checkbox" class="size-checkbox" id="xs" value="xs" />
+          <input type="checkbox" class="size-checkbox" id="s" value="s" />
+          <input type="checkbox" class="size-checkbox" id="m" value="m" />
+          <input type="checkbox" class="size-checkbox" id="l" value="l" />
+          <input type="checkbox" class="size-checkbox" id="xl" value="xl" />
+          <input type="checkbox" class="size-checkbox" id="xxl" value="xxl" />
+          <input type="checkbox" class="size-checkbox" id="xxxl" value="xxxl" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Price -->
+    <div class="product-price">
+      <input type="number" placeholder="product price(KSH)" id="price" />
+      <!-- <input type="number" placeholder="discount percentage" id="discount" /> -->
+      <!-- <input type="number" placeholder="selling price" id="sell-price" /> -->
+    </div>
+
+    <!-- <input
+        type="number"
+        min="10"
+        placeholder="items in stock (minimum 20)"
+        id="stock"
+      /> -->
+
+    <textarea placeholder="Enter categories here, seperated by commas 
+ for example - Men, Jeans, Blue Jeans, Rough jeans
+ (you should add shop tag at the start)" id="tags"></textarea>
+
+    <!-- <input type="checkbox" checked id="tac" class="checkbox" />
+      <label for="tac">Clothing takes a 20% share of your total sell</label> -->
+
+    <div class="buttons">
+      <button class="add-btn" id="add-btn">Add Product</button>
+      <!-- <button class="btn" id="save-btn">Save To Drafts</button> -->
+    </div>
+  </div>
+  <script src="../js/token.js"></script>
+  <script src="../js/addProduct.js"></script>
+</body>
+
+</html>

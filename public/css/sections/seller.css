@@ -1,0 +1,239 @@
+#seller-account {
+  background: #f5f5f5;
+  width: 100%;
+  display: block;
+  min-height: 90vh;
+  padding: 0 5vw;
+  position: relative;
+  overflow: auto;
+}
+
+#seller-logo {
+  color: #000;
+  margin: 20px auto 50px;
+}
+
+.hide {
+  display: none;
+}
+
+/* become a seller */
+.become-seller {
+  border-radius: 10px;
+  background: #fff;
+  padding: 30px;
+}
+
+.heading {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.des {
+  margin: 20px 0;
+  text-transform: capitalize;
+  line-height: 25px;
+  color: #000;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: #383838;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* .btn:hover {
+  border-radius: 30px;
+} */
+
+/* application form */
+.apply-form input,
+textarea {
+  font-weight: 500;
+}
+
+.apply-form input::placeholder,
+textarea::placeholder {
+  text-transform: capitalize;
+}
+
+.apply-form input:not(input[type="checkbox"]) {
+  /* targets inputs that are not checkbox */
+  width: 100%;
+}
+
+.apply-form textarea {
+  width: 100%;
+  height: 90px;
+  resize: none;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  text-transform: capitalize;
+  color: #383838;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+}
+
+.submit-btn {
+  margin: 10px 0;
+  width: auto;
+  padding: 0 40px;
+  transition: 0.3s ease;
+}
+
+/* .submit-btn:hover {
+  border-radius: 30px;
+} */
+
+.add-product {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.add-product-title {
+  text-transform: capitalize;
+  font-family: var(--heading);
+  color: #383838;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: var(--text);
+  cursor: pointer;
+}
+
+.no-product-image {
+  display: block;
+  position: absolute;
+  margin: auto;
+  height: 544px;
+  top: 26%;
+  left: 30%;
+}
+
+#seller-products {
+  padding: 0;
+}
+
+#seller-products .pro {
+  border: 1px solid var(--secondary-color);
+  cursor: auto;
+}
+
+#seller-products .pro .des h5 {
+  color: var(--primary-color);
+}
+
+#seller-products .pro .product-price {
+  color: #000;
+}
+
+#seller-products .card-action-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  background: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 10px;
+  text-align: center;
+}
+
+#seller-products .card-action-btn i {
+  font-size: 18px;
+}
+
+#seller-products .delete-btn {
+  background: crimson;
+  color: #fff;
+}
+
+.delete-alert {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn img {
+  width: 15px;
+}
+
+.delete-svg {
+  height: 60px;
+  display: block;
+  margin: 20px auto;
+}
+
+.text {
+  color: #383838;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.alert .delete-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #f25252;
+  margin: 15px auto 0;
+  display: block;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  color: #fff;
+  transition: 0.3s ease;
+}
