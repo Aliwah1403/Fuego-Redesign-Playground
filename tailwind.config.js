@@ -8,9 +8,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        aquire: ["Aquire", ...defaultTheme.fontFamily.aquire],
-      },
+      // fontFamily: {
+      //   aquire: ["Aquire", ...defaultTheme.fontFamily.aquire],
+      // },
       keyframes: {
         hide: {
           from: { opacity: "1" },
